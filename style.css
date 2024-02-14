@@ -5,6 +5,12 @@
     color: white;
 
 }
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
 #nav{
     height: 145px;
     width: 100%;
@@ -258,4 +264,60 @@ video{
 
 .card:hover{
     transform: rotate3d(1,1,0,20deg);
+}
+
+#sign-up{
+    height: 30vh;
+    background: linear-gradient(180deg, #119f3a, #ace022);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#sign-up img{
+    height: 100%;
+    /* display: flex; */
+
+    width: 17%;
+    object-fit: cover;
+}
+
+#sign-up h4{
+    font-size: 32px;
+    width: 40%;
+    text-align: center;
+    /* font-weight: 600; */
+}
+
+#arrow{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow img{
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+#arrow :nth-child(-n +1){
+    bottom: 100px;
+    position: relative;
+
+}
+
+#arrow :nth-last-child(-n+1){
+    top: 100px;
+    position: relative;
+
+}
+
+#arrow p{
+    text-align: center;
+    font-size: 35px;
+    width: 50%;
+    font-weight: 700;
 }
