@@ -1,13 +1,13 @@
 var cursor = document.querySelector("#cursor");
 var blur = document.querySelector("#cursor-blur");
-document.addEventListener("mouseover" , (dets) => {
+document.addEventListener("mousemove" , (dets) => {
     // console.log(dets.x,dets.y);
     cursor.style.left = dets.x+"px";
     cursor.style.top = dets.y+"px";
 
 })
 
-document.addEventListener("mouseover",(dets)=>{
+document.addEventListener("mousemove",(dets)=>{
     blur.style.top = dets.y - 200 +"px";
     blur.style.left = dets.x -200 +"px";
 })

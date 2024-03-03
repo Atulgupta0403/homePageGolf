@@ -38,6 +38,7 @@ html,body{
     border-radius: 50%;
     background-color: #95C11E;
     z-index: 99;
+    transition: all linear 0.1s;
 
 }
 
@@ -46,9 +47,11 @@ html,body{
     width: 400px;
     position:fixed;
     border-radius: 50%;
-    background-color: rgba(150, 193, 30, 0.17);
+    background-color: rgba(150, 193, 30, 0.27);
     z-index: 9;
     filter: blur(70px);
+    transition: all linear 0.1s;
+
 }
 
 video{
@@ -320,4 +323,114 @@ video{
     font-size: 35px;
     width: 50%;
     font-weight: 700;
+    background: linear-gradient(180deg,orange,white,green);
+    background-clip: text;
+    color: transparent;
 }
+
+#anime{
+    height: 40vh;
+    /* background-color: red; */
+}
+
+#anime-in{
+    display: flex;
+    justify-content: space-around;
+}
+.elem1{
+    background-image: url("anime1.avif");
+    /* object-fit: contain; */
+    background-size: cover;
+}
+
+.elem2{
+    background-image: url("anime2.avif");
+    background-size: cover;
+    /* opacity: 0; */
+    
+}
+
+
+.elem3{
+    background-image: url("anime3.avif");
+    background-size: cover;
+    /* opacity: 0; */
+    /* object-fit: cover;
+    overflow: hidden; */
+    background-color: #95C11E;
+}
+
+.elem{
+    height: 20vh;
+    width: 25%;
+    border-radius: 20px;
+    background-color: #95C11E;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* z-index: 10; */
+    align-items: center;
+}
+
+
+
+#anime h2{
+    font-size: 29px;
+    opacity: 0;
+}
+
+#anime h2:hover{
+    
+    opacity: 1;
+}
+
+
+
+
+#anime h1{
+    font-size: 82px;
+    font-family: gilroy;
+    text-align: center;
+    background: linear-gradient(90deg,red,white,green);
+    background-clip: text;
+    color: transparent;
+}
+
+
+#foot {
+    height: 30vh;
+    background: linear-gradient(180deg,#119f3a,#95C11E);
+    display: flex;
+    /* background-image: url("right.svg"); */
+
+
+}
+
+
+
+.img{
+    width: 250px;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.r1 img{
+    height: 150px;
+    width: 150px;
+    
+}
+
+.r1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+    gap: 30px;
+}
+
+.r1 h3{
+    font-size: 20px;
+}
+
